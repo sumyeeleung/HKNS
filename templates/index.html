@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Hak Kim Ng Simulator</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cal.css') }}" />
+	</head>
+	<body>
+		<br><br><br>
+		<img class="banner" src="{{ url_for('static', filename = 'img/banner.png') }}">
+		<div class="container">
+			<div class="chat"></div>
+			<div class="busy"></div>
+			<div class="input">
+				<input type="text" class="input" spellcheck="false" placeholder="Yes?"/>
+				<a>Send</a>
+			</div>
+		</div><br/><br/><br/><br/>
+
+		<div id="datepicker">
+			<div class="over">
+				<div class="eventdata">
+				</div>
+				<a class="close" href="javascript:;">
+					X
+		    </a>
+			</div>
+
+		</div>
+		<br><br>
+		<button class="btn1" onclick="PopUp()">About</button>
+		<script> function PopUp(){
+			$(".eventdata").empty();
+			$(".over").fadeIn("slow");
+			$(".eventdata").append('<h1>Hak Kim Ng Simulator</h1><br><p>Student suicides in Hong Kong has been happening unceasingly since August 2015. The number of cases has break the record and aroused public attention. The reason behind is complicated and can hardly be explained in here since it involves the shifting of political climate, education system, social atmosphere and so in recent years. School stuff like “study stress” and “unhappy school life” is the presumed motive of most of the departed. However, the Hong Kong Government, particularly Education Bureau, does not care and review the educational system. Hak Kim Ng, the Secretary for Education of Hong Kong, commented “They did not make themselves a life plan.” It is very irritating because he never even try to understand the abysmal conditions of the suffering students. A hundred students required to talk to him when he was leaving after a school celebration. At last he just rejected everything, inculding a petition letter. All he did was get on the car and play with his phone. All these have inspired “Hak Kim Ng Simulator”.<br><br><br>The calendar appears as a memorial and indicates the dates of the students’ death. You may find that a student in Hong Kong died today in history.<br><br></p>');
+		}
+		</script><br>
+		<script type="text/javascript" src="{{ url_for('static', filename='jquery-1.7.2.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='bot.js') }}"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='layout.js') }}"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='calendar.js') }}"></script>
+	</body>
+</html>

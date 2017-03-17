@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	font-family: "Helvetica";
+	font-size: 13px;
+	background-color: #a6a6a6;
+}
+
+.btn1{
+  position: fixed;;
+  left: 48%;
+}
+
+.container {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 580px;
+	margin: 30px auto 20px;
+}
+
+.container h1 {
+	text-align: center;
+}
+
+img.banner {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Helvetica", Monospace;
+	text-shadow: #ccc 2px 2px 1px;
+	padding-bottom: 5px;
+}
+
+.chat {
+	border: 1px solid #ccc;
+	height: 400px;
+	overflow-y: scroll;
+	background-color: white;
+	border-radius: 10px 0 0 0;
+}
+
+.chat div {
+	margin: 10px 12px 15px;
+	line-height: 20px;
+}
+
+.chat .party {
+	font-weight: bold;
+}
+
+.chat .you {
+	color: #333333;
+}
+
+.chat .other {
+	color: #333333;
+}
+
+.chat .text {
+
+}
+
+.busy {
+	position: absolute;
+	padding: 3px 0;
+	color: #666;
+	display: none;
+	font-size: 11px;
+}
+
+.input {
+	margin-top: 20px;
+}
+
+.input input {
+	vertical-align: top;
+	float: left;
+	border: 1px solid #ccc;
+	padding: 5px;
+	width: 440px;
+	margin: 0;
+	border-radius: 5px;
+}
+
+.input a {
+	vertical-align: top;
+	float: right;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	padding: 7px 35px;
+	color: black;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.input a:hover {
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+.btn1 {
+	display: block;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background-color: #efefef;
+	padding: 7px 35px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
